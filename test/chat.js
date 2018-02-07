@@ -6,9 +6,16 @@ const assert = require('assert'),
         'force new connection': true
       };
 
-const app = require('../config/www');
+const app = require('../server'),
+      server = require('http').createServer(app),
+      ioServer = require('../app/sockets')(server);
 
 describe('chat', () => {
+  before(() => {
+    server.listen(8080, () => {
+        console.log("starting server");
+    });
+  });
   it('Should initialize', (done) => {
     let client = io.connect(socketURL, options);
     client.on('connect', (msg) => {
@@ -28,6 +35,11 @@ describe('chat', () => {
         done();
         client.disconnect();
       });
+    });
+  });
+  after(() => {
+    server.close(() => {
+        console.log("closing server");
     });
   });
 });
