@@ -6,6 +6,8 @@ const assert = require('assert'),
         'force new connection': true
       };
 
+const app = require('../config/www');
+
 describe('chat', () => {
   it('Should initialize', (done) => {
     let client = io.connect(socketURL, options);
