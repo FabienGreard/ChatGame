@@ -1,4 +1,5 @@
 [![dependencies Status](https://david-dm.org/FabienGreard/ChatGame/status.svg)](https://david-dm.org/FabienGreard/ChatGame)
+[![Build Status](https://travis-ci.org/FabienGreard/ChatGame.svg?branch=master)](https://travis-ci.org/FabienGreard/ChatGame)
 
 ## Install
 
