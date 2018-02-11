@@ -1,7 +1,7 @@
 {
   "name": "static-chat",
-  "version": "1.0.0",
-  "description": "basic http server",
+  "version": "0.0.1",
+  "description": "A chat using react",
   "main": "server.js",
   "scripts": {
     "start": "node ./config/www",
@@ -9,7 +9,7 @@
     "test": "mocha"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.16.2",
     "morgan": "^1.9.0",
