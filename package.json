@@ -1,0 +1,22 @@
+{
+  "name": "static-chat",
+  "version": "1.0.0",
+  "description": "basic http server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./config/www",
+    "dev": "nodemon ./config/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "pug": "^2.0.0-rc.4",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  }
+}
