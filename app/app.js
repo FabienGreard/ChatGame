@@ -4,19 +4,21 @@ const socket = io(),
       message = document.getElementById('message');
 
 form.onsubmit = () => {
-  socket.emit('chat message', message.value)
+  socket.emit('chat message', message.value) // emit client
   message.value = '';
   return false;
 }
 
+const appendMessage = (msg) => {
+  let li = document.createElement("li"); // create a li element
+  li.innerHTML = msg; // set li InnerHTML
+  messages.append(li); // add this element to ul
+}
+
 socket.on('chat message', (msg) => {
-  let li = document.createElement("li");
-  li.innerHTML = msg;
-  messages.append(li);
+  appendMessage(msg);
 });
 
 socket.on('initialize', (msg) => {
-  let li = document.createElement("li");
-  li.innerHTML = msg;
-  messages.append(li);
+  appendMessage(msg);
 });
