@@ -1,5 +1,5 @@
 {
-  "name": "static-chat",
+  "name": "simple-chat",
   "version": "0.0.1",
   "description": "A chat using react",
   "main": "server.js",
