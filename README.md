@@ -1,3 +1,5 @@
+[![dependencies Status](https://david-dm.org/FabienGreard/ChatGame/status.svg)](https://david-dm.org/FabienGreard/ChatGame)
+
 ## Install
 
 `npm install`
