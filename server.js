@@ -9,6 +9,7 @@ app.set('view engine', 'pug');
 
 // public folder
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'app')));
 
 // logger init
 app.use(logger('dev'));
